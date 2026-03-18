@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1020" />
+    <title>HumToNotes — Humming to Music Notes</title>
+    <meta
+      name="description"
+      content="HumToNotes turns your humming into musical notes. Record, detect pitch, and get note results in seconds."
+    />
+    <meta property="og:title" content="HumToNotes" />
+    <meta
+      property="og:description"
+      content="Turn humming into musical notes. Record → detect pitch → view notes."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%236ee7ff' d='M40 10v30.2a10 10 0 1 1-4-8V16l20-4v18.2a10 10 0 1 1-4-8V8L40 10Z'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script defer src="assets/site.js"></script>
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand" href="#top" aria-label="HumToNotes home">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brandText">HumToNotes</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a class="pill" href="support.html">Support</a>
+      </nav>
+      <button class="menuBtn" type="button" aria-label="Open menu" data-menu>
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="heroGrid">
+          <div class="heroCopy">
+            <p class="kicker">Humming → Notes</p>
+            <h1>Turn your humming into musical notes.</h1>
+            <p class="sub">
+              HumToNotes records your voice, detects pitch, and maps it to readable note results —
+              great for capturing melodies fast.
+            </p>
+            <div class="ctaRow">
+              <a class="btn primary" href="#get">Get started</a>
+              <a class="btn ghost" href="#features">See features</a>
+            </div>
+            <div class="badges" aria-label="Highlights">
+              <div class="badge">
+                <div class="badgeTop">Fast</div>
+                <div class="badgeSub">Pitch detection</div>
+              </div>
+              <div class="badge">
+                <div class="badgeTop">Simple</div>
+                <div class="badgeSub">Record → Results</div>
+              </div>
+              <div class="badge">
+                <div class="badgeTop">Private</div>
+                <div class="badgeSub">On-device workflow*</div>
+              </div>
+            </div>
+            <p class="fineprint">
+              *Your exact app behavior depends on your build; see <a href="privacy.html">Privacy</a>.
+            </p>
+          </div>
+
+          <div class="heroArt" role="img" aria-label="Stylized music visualization">
+            <div class="glassCard">
+              <div class="cardTop">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+                <div class="cardTitle">Recording</div>
+              </div>
+              <div class="wave" aria-hidden="true">
+                <svg viewBox="0 0 800 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 130 C 40 130, 40 90, 80 90 C 120 90, 120 160, 160 160 C 200 160, 200 60, 240 60 C 280 60, 280 140, 320 140 C 360 140, 360 40, 400 40 C 440 40, 440 175, 480 175 C 520 175, 520 85, 560 85 C 600 85, 600 150, 640 150 C 680 150, 680 70, 720 70 C 760 70, 760 130, 800 130"
+                    stroke="url(#g)"
+                    stroke-width="10"
+                    stroke-linecap="round"
+                  />
+                  <defs>
+                    <linearGradient id="g" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#6EE7FF" />
+                      <stop offset="0.5" stop-color="#A78BFA" />
+                      <stop offset="1" stop-color="#34D399" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="notesRow" aria-hidden="true">
+                <span class="chip">A4</span>
+                <span class="chip">C5</span>
+                <span class="chip">B4</span>
+                <span class="chip">G4</span>
+                <span class="chip">E4</span>
+              </div>
+              <div class="cardBottom">
+                <div class="meter">
+                  <span class="meterFill"></span>
+                </div>
+                <div class="hint">Listening…</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="sectionHead">
+          <h2>Everything you need to capture a melody</h2>
+          <p>Built for quick, repeatable results — with a modern, minimal interface.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>One-tap recording</h3>
+            <p>Start and stop in seconds. Designed for low-friction capture when inspiration hits.</p>
+          </article>
+          <article class="card">
+            <h3>Pitch → note mapping</h3>
+            <p>Detect pitch and map it to musical notes so you can recreate the melody elsewhere.</p>
+          </article>
+          <article class="card">
+            <h3>Clean results</h3>
+            <p>Review the detected notes and refine your idea without leaving the app.</p>
+          </article>
+          <article class="card">
+            <h3>Simple by default</h3>
+            <p>No accounts, no setup. A focused tool that does one job well.</p>
+          </article>
+          <article class="card">
+            <h3>Built for creators</h3>
+            <p>Great for songwriters, producers, students, and anyone learning melody by ear.</p>
+          </article>
+          <article class="card">
+            <h3>Made for iPhone</h3>
+            <p>Optimized for modern iOS devices with smooth animations and responsive layouts.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="how" class="section alt">
+        <div class="sectionHead">
+          <h2>How it works</h2>
+          <p>Three steps from idea to notes.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <div class="stepNum">1</div>
+            <div>
+              <h3>Record</h3>
+              <p>Hum or sing a short phrase. Keep it steady for best results.</p>
+            </div>
+          </li>
+          <li>
+            <div class="stepNum">2</div>
+            <div>
+              <h3>Detect</h3>
+              <p>HumToNotes analyzes pitch over time and segments the melody.</p>
+            </div>
+          </li>
+          <li>
+            <div class="stepNum">3</div>
+            <div>
+              <h3>Review</h3>
+              <p>See the mapped notes and use them in your DAW, notation app, or practice.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="screenshots" class="section">
+        <div class="sectionHead">
+          <h2>App screenshots</h2>
+          <p>A quick look at the HumToNotes flow.</p>
+        </div>
+        <div class="shots">
+          <a class="shot" href="assets/screenshots/IMG_6936.jpg" target="_blank" rel="noopener">
+            <img loading="lazy" src="assets/screenshots/IMG_6936.jpg" alt="HumToNotes screenshot 1" />
+          </a>
+          <a class="shot" href="assets/screenshots/IMG_6937.jpg" target="_blank" rel="noopener">
+            <img loading="lazy" src="assets/screenshots/IMG_6937.jpg" alt="HumToNotes screenshot 2" />
+          </a>
+          <a class="shot" href="assets/screenshots/IMG_6938.jpg" target="_blank" rel="noopener">
+            <img loading="lazy" src="assets/screenshots/IMG_6938.jpg" alt="HumToNotes screenshot 3" />
+          </a>
+          <a class="shot" href="assets/screenshots/IMG_6939.jpg" target="_blank" rel="noopener">
+            <img loading="lazy" src="assets/screenshots/IMG_6939.jpg" alt="HumToNotes screenshot 4" />
+          </a>
+          <a class="shot" href="assets/screenshots/IMG_6940.jpg" target="_blank" rel="noopener">
+            <img loading="lazy" src="assets/screenshots/IMG_6940.jpg" alt="HumToNotes screenshot 5" />
+          </a>
+          <a class="shot" href="assets/screenshots/IMG_6941.jpg" target="_blank" rel="noopener">
+            <img loading="lazy" src="assets/screenshots/IMG_6941.jpg" alt="HumToNotes screenshot 6" />
+          </a>
+        </div>
+        <p class="small muted2" style="max-width: var(--max); margin: 12px auto 0">
+          Tip: click any screenshot to open it full size.
+        </p>
+      </section>
+
+      <section id="get" class="section">
+        <div class="ctaCard">
+          <div>
+            <h2>Use this site for App Store Connect</h2>
+            <p>
+              Put these URLs into App Store Connect:
+              <span class="mono">
+                Support URL: <span data-url="support"></span><br />
+                Marketing URL: <span data-url="marketing"></span><br />
+                Privacy Policy URL: <span data-url="privacy"></span>
+              </span>
+            </p>
+          </div>
+          <div class="ctaButtons">
+            <a class="btn primary" href="support.html">Support</a>
+            <a class="btn ghost" href="privacy.html">Privacy</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="sectionHead">
+          <h2>FAQ</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Is HumToNotes accurate?</summary>
+            <p>
+              Accuracy depends on recording quality, background noise, and how steady the pitch is.
+              For best results: hum a single melody line, close to the mic, in a quiet room.
+            </p>
+          </details>
+          <details>
+            <summary>Do I need an account?</summary>
+            <p>No — the app is designed to be lightweight and low-friction.</p>
+          </details>
+          <details>
+            <summary>How do I contact support?</summary>
+            <p>
+              Visit the <a href="support.html">Support</a> page for contact options and troubleshooting
+              steps.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footerGrid">
+        <div>
+          <div class="brand footerBrand">
+            <span class="logo" aria-hidden="true"></span>
+            <span class="brandText">HumToNotes</span>
+          </div>
+          <p class="muted">Capture melodies fast. Turn humming into musical notes.</p>
+        </div>
+        <div class="footerLinks">
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="#features">Features</a>
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <span class="muted">© <span data-year></span> HumToNotes</span>
+      </div>
+    </footer>
+  </body>
+</html>
+

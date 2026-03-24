@@ -78,6 +78,22 @@ a:hover{opacity:.9}
 }
 .nav a{padding:8px 10px; border-radius:10px}
 .nav a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+.navAppStore{
+  padding:8px 12px!important;
+  border-radius:10px;
+  border:1px solid rgba(110,231,255,.4)!important;
+  background:
+    radial-gradient(80% 120% at 20% 0%, rgba(110,231,255,.28), transparent 55%),
+    rgba(255,255,255,.08)!important;
+  color:var(--text)!important;
+  box-shadow: 0 0 24px rgba(110,231,255,.12);
+}
+.navAppStore:hover{
+  background:
+    radial-gradient(80% 120% at 20% 0%, rgba(110,231,255,.4), transparent 55%),
+    rgba(255,255,255,.1)!important;
+  box-shadow: 0 0 32px rgba(110,231,255,.2);
+}
 .pill{
   background:rgba(255,255,255,.08);
   border:1px solid rgba(255,255,255,.12);
@@ -164,6 +180,64 @@ main{display:block}
 }
 .btn.ghost{background: rgba(255,255,255,.03)}
 .btn:hover{transform: translateY(-1px)}
+
+.appStoreHighlight{
+  display:inline-flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:10px;
+  padding:14px 18px 16px;
+  border-radius:18px;
+  border:2px solid rgba(110,231,255,.5);
+  background:
+    radial-gradient(90% 140% at 15% 0%, rgba(110,231,255,.35), transparent 58%),
+    radial-gradient(80% 120% at 95% 20%, rgba(167,139,250,.2), transparent 55%),
+    rgba(255,255,255,.07);
+  box-shadow:
+    0 0 0 1px rgba(110,231,255,.15),
+    0 22px 56px rgba(110,231,255,.18),
+    0 12px 40px rgba(0,0,0,.35);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.appStoreHighlight:hover{
+  transform: translateY(-2px);
+  border-color: rgba(110,231,255,.75);
+  box-shadow:
+    0 0 0 1px rgba(110,231,255,.25),
+    0 28px 70px rgba(110,231,255,.28),
+    0 16px 48px rgba(0,0,0,.4);
+  opacity:1;
+}
+.appStoreHighlightTitle{
+  font-weight:800;
+  font-size:15px;
+  letter-spacing:-0.02em;
+  color:var(--text);
+  line-height:1.2;
+}
+.appStoreBadgeImg{
+  display:block;
+  height:44px;
+  width:auto;
+  max-width:100%;
+}
+.appStoreHighlightLarge .appStoreBadgeImg{height:52px}
+
+.downloadSectionIntro{
+  text-align:center;
+  margin-bottom:8px;
+}
+.downloadSectionIntro h2{margin-bottom:8px}
+.downloadBanner{
+  max-width:var(--max);
+  margin:0 auto 22px;
+  display:flex;
+  justify-content:center;
+}
+.footerAppStore{
+  color: rgba(110,231,255,.95)!important;
+  font-weight:750;
+}
 
 .badges{
   display:flex;
